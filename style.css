@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+.img {
+  width: 5rem;
+  border-radius: 10rem;
+  box-shadow: 0 0 10px rgba(130, 109, 109, 0.8);
+}
+.navitems {
+  text-decoration: none;
+}
+.navitems > ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  /* margin-left: auto;
+     margin-right: 2rem;
+     justify-content: flex-end;
+     align-items: flex-end; */
+}
+.navitems > ul > li {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  color: #343a40;
+}
+.restrocontainer {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template: repeat(4, 200px) / repeat(4, 200px);
+  gap: 1.5rem;
+  padding: 2rem;
+  /* max-width: 1200px; */
+}
+.restro-card {
+  background-color: #5c96d1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(130, 109, 109, 0.8);
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  height: 100px;
+  border: 1px solid #85aed6;
+}
+
+.restro-card:hover {
+  transform: translateY(-4px);
+}

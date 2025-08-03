@@ -1,0 +1,30 @@
+{
+  "name": "reeact",
+  "version": "1.0.0",
+  "description": "React",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankur1007/REACT-.git"
+  },
+  "keywords": [
+    "react-Ankur"
+  ],
+  "author": "Ankur Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankur1007/REACT-/issues"
+  },
+  "homepage": "https://github.com/ankur1007/REACT-#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
