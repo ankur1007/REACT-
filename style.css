@@ -59,11 +59,12 @@
     90deg,
     rgba(42, 123, 155, 1) 0%,
     rgba(87, 199, 133, 1) 50%,
-    rgba(237, 221, 83, 1) 100%
+    rgb(227, 221, 158) 100%
   );
   gap: 0.1rem;
   margin-left: 0.5rem;
   margin: 1rem;
+
   padding: 2rem;
   padding-right: 0;
   margin-right: 0;
@@ -75,6 +76,7 @@
   border-radius: 10px;
   padding: 0rem;
   width: 35vh;
+  margin-bottom: 1.5rem;
   text-align: center;
   text-align: center;
   box-shadow: 0 0 10px rgba(130, 109, 109, 0.8);
@@ -117,4 +119,14 @@
   border: none;
   cursor: pointer;
   box-shadow: 0 0 5px #5c96d1;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #5c96d1;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px #5c96d1;
+  transition: background-color 0.3s ease;
 }

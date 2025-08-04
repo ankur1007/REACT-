@@ -1,33 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-/**
- * Header
-    - Logo
-    - Nav Item
- * Body
-    -Search
-    - RestaurantContainer
-    *  RestaurantCard
-        - Img
-        - Name
-        - Rating
-        -cuisine
-        - Delivery Time
- * Img
- *  Nane of
- * Footer
- * Copyright
- * Links
- * Address
- * Contact
-
-  */
-
-//
-//    /*restData is passed as key or props and resobj is argument*/S
-
-const resobj = [
+const reslist = [
   {
     "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
     info: {
@@ -539,105 +510,374 @@ const resobj = [
     },
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
+
+  {
+    info: {
+      id: "625927",
+      name: "Kathi Junction",
+      cloudinaryImageId: "nigqvxgzvyxtfjuqasgg",
+      locality: "Bunglow Madhuvan Colony",
+      areaName: "Prasia Road",
+      costForTwo: "₹200 for two",
+      cuisines: ["rolls", "Burgers", "Pizzas", "Fast Food"],
+      avgRating: 4.3,
+      parentId: "1935",
+      avgRatingString: "4.3",
+      totalRatingsString: "384",
+      sla: {
+        deliveryTime: 41,
+        lastMileTravel: 12.2,
+        serviceability: "SERVICEABLE",
+        slaString: "40-45 mins",
+        lastMileTravelString: "12.2 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2025-08-03 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹100 OFF",
+        subHeader: "ABOVE ₹399",
+        discountTag: "FLAT DEAL",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {
+      context: "seo-data-c3bb75cf-b0fe-46ce-b73b-601274f1ab9b",
+    },
+    cta: {
+      link: "https://www.swiggy.com/city/chhindwara/kathi-junction-bunglow-madhuvan-colony-prasia-road-rest625927",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "385824",
+      name: "The Belgian Waffle Co.",
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/17/a38d20d7-bbb7-4b67-8bdd-7740e85cd4af_385824.JPG",
+      locality: "Sinchai Colony",
+      areaName: "Mohan Nagar",
+      costForTwo: "₹200 for two",
+      cuisines: ["Waffle", "Desserts", "Ice Cream", "Beverages"],
+      avgRating: 4.7,
+      veg: true,
+      parentId: "2233",
+      avgRatingString: "4.7",
+      totalRatingsString: "319",
+      sla: {
+        deliveryTime: 41,
+        lastMileTravel: 13.4,
+        serviceability: "SERVICEABLE",
+        slaString: "40-45 mins",
+        lastMileTravelString: "13.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2025-08-03 22:45:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "v1695133679/badges/Pure_Veg111.png",
+            description: "pureveg",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "pureveg",
+                  imageId: "v1695133679/badges/Pure_Veg111.png",
+                },
+              },
+            ],
+          },
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹200 OFF",
+        subHeader: "ABOVE ₹999",
+        discountTag: "FLAT DEAL",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {
+      context: "seo-data-c3bb75cf-b0fe-46ce-b73b-601274f1ab9b",
+    },
+    cta: {
+      link: "https://www.swiggy.com/city/chhindwara/the-belgian-waffle-co-sinchai-colony-mohan-nagar-rest385824",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "658210",
+      name: "The Fusion Lounge",
+      cloudinaryImageId: "fa4944f0cfdcbca2bec1f3ab8e3db3f7",
+      locality: "Triloki nagar",
+      areaName: "Railway Station",
+      costForTwo: "₹300 for two",
+      cuisines: [
+        "South Indian",
+        "Chinese",
+        "Beverages",
+        "Fast Food",
+        "Desserts",
+      ],
+      avgRating: 4.1,
+      parentId: "395453",
+      avgRatingString: "4.1",
+      totalRatingsString: "355",
+      sla: {
+        deliveryTime: 53,
+        lastMileTravel: 11.9,
+        serviceability: "SERVICEABLE",
+        slaString: "50-55 mins",
+        lastMileTravelString: "11.9 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2025-08-03 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      aggregatedDiscountInfoV2: {},
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {
+      context: "seo-data-c3bb75cf-b0fe-46ce-b73b-601274f1ab9b",
+    },
+    cta: {
+      link: "https://www.swiggy.com/city/chhindwara/the-fusion-lounge-triloki-nagar-railway-station-rest658210",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "184424",
+      name: "Sab Ghar Tak Foods",
+      cloudinaryImageId: "ryzswg44bt7thqzkuaj4",
+      locality: "Sanchar Colony",
+      areaName: "Parsia Road",
+      costForTwo: "₹200 for two",
+      cuisines: [
+        "North Indian",
+        "South Indian",
+        "Chinese",
+        "Beverages",
+        "Fast Food",
+        "Desserts",
+      ],
+      avgRating: 4.1,
+      parentId: "173932",
+      avgRatingString: "4.1",
+      totalRatingsString: "617",
+      sla: {
+        deliveryTime: 47,
+        lastMileTravel: 14.1,
+        serviceability: "SERVICEABLE",
+        slaString: "45-50 mins",
+        lastMileTravelString: "14.1 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2025-08-03 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹50 OFF",
+        subHeader: "ABOVE ₹199",
+        discountTag: "FLAT DEAL",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {
+      context: "seo-data-c3bb75cf-b0fe-46ce-b73b-601274f1ab9b",
+    },
+    cta: {
+      link: "https://www.swiggy.com/city/chhindwara/sab-ghar-tak-foods-sanchar-colony-parsia-road-rest184424",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "522144",
+      name: "Blue Chilli Restaurant",
+      cloudinaryImageId: "je6qlse8csxgcfpuoybe",
+      locality: "Ambedkar Nagar",
+      areaName: "Prasia Road",
+      costForTwo: "₹150 for two",
+      cuisines: ["South Indian", "Indian", "Fast Food"],
+      avgRating: 4.1,
+      veg: true,
+      parentId: "311804",
+      avgRatingString: "4.1",
+      totalRatingsString: "226",
+      sla: {
+        deliveryTime: 43,
+        lastMileTravel: 10.9,
+        serviceability: "SERVICEABLE",
+        slaString: "40-45 mins",
+        lastMileTravelString: "10.9 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2025-08-03 23:00:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "v1695133679/badges/Pure_Veg111.png",
+            description: "pureveg",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "pureveg",
+                  imageId: "v1695133679/badges/Pure_Veg111.png",
+                },
+              },
+            ],
+          },
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "20% OFF",
+        subHeader: "UPTO ₹120",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {
+      context: "seo-data-c3bb75cf-b0fe-46ce-b73b-601274f1ab9b",
+    },
+    cta: {
+      link: "https://www.swiggy.com/city/chhindwara/blue-chilli-restaurant-ambedkar-nagar-prasia-road-rest522144",
+      type: "WEBLINK",
+    },
+  },
 ];
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo">
-        <img
-          className="img"
-          src="https://img.freepik.com/premium-vector/food-ordering-app-logo-with-points-fork-shapes-center_666184-195.jpg"
-          alt="image"
-        ></img>
-      </div>
-      <div className="navitems">
-        <ul>
-          <li>
-            {" "}
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            {" "}
-            <a href="#menu">Menu</a>
-          </li>{" "}
-          <li>
-            {" "}
-            <a href="#about">About</a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            {" "}
-            <a href="#cart">Cart</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-const Restrocard = (props) => {
-  const { resData } = props;
-  const {
-    cloudinaryImageId,
-    slaString,
-    costForTwo,
-    name,
-    deliveryTime,
-    cuisines,
-  } = resData?.info;
-  return (
-    <div className="restrocard">
-      <img
-        className="images"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
-      />
-      <h3>{name} </h3>
-      <p>Delivery:{resData.info.sla.slaString} </p>
-      <p>{costForTwo}</p>
-      <p>{cuisines.join(", ")}</p>
-    </div>
-  );
-};
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="content">
-        <h1>Welcome to FoodApp</h1>
-        <p>Order your favorite food online!</p>
-      </div>
-      <div className="search">
-        <input id="bar" type="text" placeholder="Search for food..." />
-        <button id="searchbutton"> Search </button>
-      </div>
-
-      <div className="restrocontainer">
-        <Restrocard resData={resobj[0]} />
-        <Restrocard resData={resobj[1]} />
-        <Restrocard resData={resobj[2]} />
-        <Restrocard resData={resobj[3]} />
-        <Restrocard resData={resobj[4]} />
-        <Restrocard resData={resobj[5]} />
-      </div>
-    </div>
-  );
-};
-const AppLayout = () => {
-  return (
-    <div className="app-layout">
-      <header className="app-header">
-        <Header />
-        <Body />
-      </header>
-    </div>
-  );
-};
-
-const FoodApp = ReactDOM.createRoot(document.getElementById("root"));
-FoodApp.render(AppLayout());
+export default reslist;
