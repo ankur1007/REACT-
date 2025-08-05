@@ -1,6 +1,5 @@
-const reslist = [
+export const rawdatas = [
   {
-    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
     info: {
       id: "234875",
       name: "Adil Hotel",
@@ -880,4 +879,3 @@ const reslist = [
     },
   },
 ];
-export default reslist;

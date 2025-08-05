@@ -1,6 +1,7 @@
 .body {
   margin: 0;
-  min-width: 100%;
+
+  max-width: 1200px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,6 +9,7 @@
 /* nav */
 .header {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +43,9 @@
 }
 .navitems > ul > li {
   padding: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  list-style: none;
+  font-style: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: #343a40;

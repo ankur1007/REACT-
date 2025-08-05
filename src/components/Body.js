@@ -1,7 +1,9 @@
-import Restrocard from "./restrocard";
-import reslist from "../utils/rawdata";
+import { Restrocard } from "./restrocard";
+import { rawdatas } from "../utils/rawdata";
+import { useState } from "react";
 
 const Body = () => {
+  // const [res, setRes] = useState([reslist]);
   return (
     <div className="body">
       <div className="content">
@@ -9,11 +11,11 @@ const Body = () => {
         <p>Order your favorite food online!</p>
         <button
           className="btn"
-          onClick={() =>
-            (res = reslist.filter((res) => reslist.info.avgRating > 4.0))
-          }
+          // onClick={() => {
+          //   const filteredlist = res.filter((res) => res.info.avgRating > 4);
+          //   setRes(filteredlist);
+          // }}
         >
-          {console.log(res)}
           top rated
         </button>
       </div>
@@ -23,8 +25,8 @@ const Body = () => {
       </div>
 
       <div className="restrocontainer">
-        {reslist.map((restro) => (
-          <Restrocard resData={restro} key={restro.info.id} />
+        {rawdatas.map((restro) => (
+          <Restrocard key={restro.info.id} resData={restro} />
         ))}
       </div>
     </div>

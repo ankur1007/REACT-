@@ -1,5 +1,4 @@
 import { logo } from "../Utils/contant";
-
 const Header = () => {
   return (
     <div className="header">
