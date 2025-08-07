@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/header";
 import Body from "./components/body";
-import { CDN } from "./Utils/contant.js";
 
 const AppLayout = () => {
   return (
