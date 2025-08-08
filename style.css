@@ -125,12 +125,34 @@
   box-shadow: 0 0 5px #5c96d1;
 }
 .btn {
+  margin-top: 1rem;
+  margin-left: 5rem;
   padding: 0.5rem 1rem;
   background-color: #5c96d1;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
   cursor: pointer;
-  box-shadow: 0 0 5px #5c96d1;
-  transition: background-color 0.3s ease;
+  box-shadow: none;
+  border: none;
+}
+.btn:hover {
+  box-shadow: 0px 0px 2px 2px #797978;
+}
+.cards {
+  width: 2rem;
+  height: 1rem;
+
+  color: #a19b9b;
+}
+
+.cardscontainer {
+  color: #5c96d1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.login {
+  background-color: 1px solid rgb(135, 135, 238);
+  border-radius: 1px;
+  border-radius: 1px;
+  cursor: pointer;
 }

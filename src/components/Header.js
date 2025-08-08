@@ -1,5 +1,9 @@
+import { useEffect } from "react";
 import { logo } from "../Utils/contant";
+import { useState } from "react";
 const Header = () => {
+  const [btnlog, setbtnlog] = useState("login");
+
   return (
     <div className="header">
       <div className="logo">
@@ -25,7 +29,17 @@ const Header = () => {
           </li>
           <li>
             {" "}
-            <a href="#cart">Cart</a>
+            <a href="#cart">Cart</a>{" "}
+          </li>
+          <li>
+            <button
+              className="login"
+              onClick={() => {
+                btnlog === "login" ? setbtnlog("Logout") : setbtnlog("Login");
+              }}
+            >
+              {btnlog}
+            </button>
           </li>
         </ul>
       </div>

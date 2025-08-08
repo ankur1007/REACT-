@@ -25,3 +25,7 @@ react
 
 //
 // /_restData is passed as key or props and resobj is argument_/S
+//
+
+// includes \_==> not include
+// tolowercase()
