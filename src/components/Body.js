@@ -1,27 +1,30 @@
 import { Restrocard } from "./restrocard";
-// import { rawdatas } from "../utils/rawdata";
+import { rawdatas } from "../utils/rawdata";
 import { useState } from "react";
 import { useEffect } from "react";
 import Shimmer from "./shimmer";
 
 const Body = () => {
-  const [listofrestaurent, setRestaurent] = useState([]);
-  const [filteredrestaurent, setfilteredRestaurent] = useState([]);
+  const [listofrestaurent, setRestaurent] = useState(rawdatas);
+  const [filteredrestaurent, setfilteredRestaurent] = useState(rawdatas);
 
   const [search_result, setsearch_result] = useState("");
 
   // fetching API
   useEffect(() => {
     fetchdata();
+    console.log("Ankur");
   }, []);
 
   const fetchdata = async function () {
+    console.log("I am here");
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.99740&lng=79.00110&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
+    console.log("data received");
     const jsondata = await data.json();
-
-    console.log(jsondata);
+    // debugger;
+    // console.log(jsondata);
     setRestaurent(
       jsondata?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
@@ -75,12 +78,25 @@ const Body = () => {
         />
         <button
           id="searchbutton"
-          onKeyDown={() => {
+          onClick={() => {
+            console.log("Click");
             const filterdsearch = listofrestaurent.filter((res) =>
               res.info.name.toLowerCase().includes(search_result.toLowerCase())
             );
 
             setfilteredRestaurent(filterdsearch);
+          }}
+          onKeyDown={(e) => {
+            console.log("Keydow");
+            if (e.keyCode === 13) {
+              const filterdsearch = listofrestaurent.filter((res) =>
+                res.info.name
+                  .toLowerCase()
+                  .includes(search_result.toLowerCase())
+              );
+
+              setfilteredRestaurent(filterdsearch);
+            }
           }}
         >
           {" "}
